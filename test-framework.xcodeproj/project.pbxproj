@@ -10,6 +10,12 @@
 		B340B8F725470BB60070D422 /* test_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340B8ED25470BB60070D422 /* test_framework.framework */; };
 		B340B8FC25470BB60070D422 /* test_frameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B8FB25470BB60070D422 /* test_frameworkTests.m */; };
 		B340B8FE25470BB60070D422 /* test_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = B340B8F025470BB60070D422 /* test_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B340B90925471BC40070D422 /* MainPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B340B90725471BC40070D422 /* MainPageViewController.h */; };
+		B340B90A25471BC40070D422 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B340B90825471BC40070D422 /* MainPageViewController.m */; };
+		B340B90C25471C740070D422 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B340B90B25471C740070D422 /* MainPage.storyboard */; };
+		B3FD21F92547AD9A00F125BF /* DescriptionPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FD21F72547AD9A00F125BF /* DescriptionPageViewController.h */; };
+		B3FD21FA2547AD9A00F125BF /* DescriptionPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FD21F82547AD9A00F125BF /* DescriptionPageViewController.m */; };
+		B3FD21FC2547ADC500F125BF /* DescriptionPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FD21FB2547ADC500F125BF /* DescriptionPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		B340B8F625470BB60070D422 /* test-frameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-frameworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B340B8FB25470BB60070D422 /* test_frameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_frameworkTests.m; sourceTree = "<group>"; };
 		B340B8FD25470BB60070D422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B340B90725471BC40070D422 /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		B340B90825471BC40070D422 /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		B340B90B25471C740070D422 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
+		B3FD21F72547AD9A00F125BF /* DescriptionPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescriptionPageViewController.h; sourceTree = "<group>"; };
+		B3FD21F82547AD9A00F125BF /* DescriptionPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescriptionPageViewController.m; sourceTree = "<group>"; };
+		B3FD21FB2547ADC500F125BF /* DescriptionPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DescriptionPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,8 @@
 		B340B8EF25470BB60070D422 /* test-framework */ = {
 			isa = PBXGroup;
 			children = (
+				B3FD21F62547ACF200F125BF /* DescriptionPage */,
+				B3FD21F52547AC8B00F125BF /* MainPage */,
 				B340B8F025470BB60070D422 /* test_framework.h */,
 				B340B8F125470BB60070D422 /* Info.plist */,
 			);
@@ -86,6 +100,26 @@
 			path = "test-frameworkTests";
 			sourceTree = "<group>";
 		};
+		B3FD21F52547AC8B00F125BF /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				B340B90725471BC40070D422 /* MainPageViewController.h */,
+				B340B90825471BC40070D422 /* MainPageViewController.m */,
+				B340B90B25471C740070D422 /* MainPage.storyboard */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		B3FD21F62547ACF200F125BF /* DescriptionPage */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD21F72547AD9A00F125BF /* DescriptionPageViewController.h */,
+				B3FD21F82547AD9A00F125BF /* DescriptionPageViewController.m */,
+				B3FD21FB2547ADC500F125BF /* DescriptionPage.storyboard */,
+			);
+			path = DescriptionPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B340B8FE25470BB60070D422 /* test_framework.h in Headers */,
+				B340B90925471BC40070D422 /* MainPageViewController.h in Headers */,
+				B3FD21F92547AD9A00F125BF /* DescriptionPageViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FD21FC2547ADC500F125BF /* DescriptionPage.storyboard in Resources */,
+				B340B90C25471C740070D422 /* MainPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FD21FA2547AD9A00F125BF /* DescriptionPageViewController.m in Sources */,
+				B340B90A25471BC40070D422 /* MainPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
