@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "test-framework"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Objective-C Library testing."
 
   # This description is used to generate tags and improve search results.
@@ -91,10 +91,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "test-framework", "test_framework/*.{h,m}"
+  spec.source_files  = "test-framework", "test-framework/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "test_framework/*.h"
+  spec.public_header_files = "test-framework/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
